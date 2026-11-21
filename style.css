@@ -1,0 +1,37 @@
+:root{--bg:#0b0e13;--s1:#141922;--line:#262d3a;--ink:#eef0f4;--mut:#a3abba;--brass:#d6b26e;--brass2:#f0cf8f;--sea:#5cc6c0;--serif:"Instrument Serif",Georgia,serif;--sans:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif}
+@media (prefers-color-scheme:light){:root{--bg:#f6f3ec;--s1:#fffdf8;--line:#e3ddd0;--ink:#1b1f27;--mut:#5d6472;--brass:#9a7531;--brass2:#b8913f;--sea:#1f8a84}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 var(--sans)}
+a{color:var(--brass)}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--ink);text-decoration:none;letter-spacing:.01em}
+.logo img{width:32px;height:32px;border-radius:9px}
+nav{display:flex;gap:16px;flex-wrap:wrap;font-size:14px;font-weight:700}
+nav a{color:var(--mut);text-decoration:none}
+nav a[aria-current]{color:var(--brass)}
+main{padding:40px 0 64px}
+h1{font:400 44px/1.08 var(--serif);margin:0 0 12px}
+h1 em{color:var(--brass)}
+h2{font:400 28px/1.15 var(--serif);margin:40px 0 8px}
+h3{font-size:17px;margin:24px 0 4px}
+p,li{color:var(--ink)}
+.lead{font-size:18px;color:var(--mut);max-width:58ch}
+.meta{color:var(--mut);font-size:14px}
+.card{background:var(--s1);border:1px solid var(--line);border-radius:20px;padding:20px 22px;margin:20px 0}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));margin:28px 0}
+.grid .card{margin:0}
+.grid b{display:block;font-size:16px;margin-bottom:4px}
+.grid p{margin:0;color:var(--mut);font-size:15px}
+.btn{display:inline-block;background:linear-gradient(180deg,var(--brass2),var(--brass));color:#1b1406;font-weight:800;text-decoration:none;padding:13px 20px;border-radius:14px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}
+.btn.o{background:none;color:var(--ink);border:1px solid var(--line)}
+table{width:100%;border-collapse:collapse;font-size:15px;margin:12px 0}
+th,td{text-align:left;vertical-align:top;padding:10px 8px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-size:13px;text-transform:uppercase;letter-spacing:.05em}
+.tbl{overflow-x:auto}
+footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--mut);font-size:14px}
+footer .wrap{display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between}
+@media (max-width:520px){h1{font-size:36px}main{padding-top:28px}}
